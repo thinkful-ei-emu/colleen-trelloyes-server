@@ -7,8 +7,8 @@ const helmet = require('helmet');
 const { NODE_ENV } = require('./config');
 
 const logger = require('./logger');
-const listRouter = require('./list/list.server');
-const cardRouter = require('./card/card.server');
+const listRouter = require('./list/list.router');
+const cardRouter = require('./card/card.router');
 const app = express();
 
 const morganOption = NODE_ENV === 'production' ? 'tiny' : 'common';
